@@ -9,3 +9,125 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header{
+    background-color: pink;
+}
+    header > .container{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1{
+        justify-content: left;
+    }
+    nav{
+        justify-content: right;
+    }
+        nav > ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+
+        }
+        nav > ul > li{
+            padding: 0 10px;
+        }
+
+    .overview-hero{
+        background-color: aqua;
+        display: flex;
+    }
+        .overview-hero > .container{
+            padding: 10px;
+            display: flex;
+            background-color: cadetblue;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .overview-hero-image{
+            align-items: left;
+        }
+            .overview-hero-image > img{
+                width: 100px;
+            }
+        .overview-hero-content{
+            align-items: right;
+        }
+
+    .learn-about{
+        background-color: rgb(255, 223, 186);
+        padding: 20px;
+    }
+        .cards{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            background-color: lightslategray;
+        }
+            .card{
+                background-color: lightgoldenrodyellow;
+                text-align: center;
+                
+            }
+                .card > img{
+                    width: 100px;
+                }
+
+    .testing{
+        background-color: rgb(255, 189, 255);
+    }
+        .testing > .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .testing-description{
+            align-items: left;
+            padding: 20px;
+        }
+        .cta{
+            align-items: right;
+            padding: 20px;
+        }
+    
+    .stories{
+        background-color: rgb(180, 231, 180);
+        display: flex;
+    }
+        .stories > .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        article > img{
+            width: 100px;
+            align-items: left;
+        }
+        .article-body{
+            align-items: right;
+        }
+
+    .newsletter{
+        background-color: lightcyan;
+        display: flex;
+    }
+        .newsletter > .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
