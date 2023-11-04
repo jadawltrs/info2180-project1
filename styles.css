@@ -12,12 +12,14 @@ a{
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    font-size: 18px;
 }
 
 header{
     background-color: white;
 }
     header > .container{
+        font-size: 18px;
         display: flex;
         flex-direction:row;
         justify-content: space-between;
@@ -25,19 +27,26 @@ header{
     }
     h1{
         justify-content: left;
+        font-size: 18px;
     }
     nav{
         justify-content: right;
     }
-    nav:hover{
-        color: #5a67d8
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        gap: 20px;
+        color: #6b7280;
+        font-weight: bold;
     }
-        nav > ul{
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            align-items: center;
-            gap: 20px;
+
+        nav > ul > li > a{
+            color: #6b7280;
+        }
+        nav > ul > li > a:hover{
+            color: #5a67d8
         }
 
     .overview-hero{
@@ -75,11 +84,10 @@ header{
             grid-gap: 10px;
         }
         .card{
-            /* text-align: center; */
-            border-color: #e2e8f0;
-            border-width: 5px;
+            border: 1.5px solid #E2E8F0;
+            border-radius: 5px;
             box-shadow: 2px 2px 5px 0px rgba(151, 151, 151, 0.5);
-            
+            padding: 10px;
         }
             .card-body > h3{
                 font-size: 21px;
@@ -97,17 +105,20 @@ header{
             display: flex;
             align-items: center;
             gap: 30px;
-            padding: 20px;
+            padding: 30px;
         }
         .testing-description{
             align-items: left;
-            padding: 20px;
+            padding: 30px;
         }
         .cta{
-            /* align-items: right; */
-            padding: 20px;
+            align-items: right;
+            text-align: center;
+            padding: 10px 15px;
             background-color: #48bb78;
             border-radius: 5px;
+            width:auto;
+            white-space: nowrap;
         }
             .cta > a{
                 color: white;
@@ -142,8 +153,9 @@ header{
         .article-body{
             align-items: right;
         }
-            .article-body > a{
+            .article-body > p > a{
                 color: #5a67d8;
+                font-weight: bold;
             }
 
     .newsletter{
@@ -158,10 +170,27 @@ header{
             align-items: center;
             padding: 20px;
         }
-        .newsletter > button{
-            background-color: #5a67d8;
-            color: white;
+        
+        form{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
         }
+        
+            form > button{
+                background-color: #5a67d8;
+                color: white;
+                padding: 10px 15px;
+                border:none;
+                border-radius: 5px;
+            }
+            input{
+                padding: 10px 15px;
+                border-radius: 5px;
+                border: none;
+            }
+
 
     footer{
         background-color: #4a5568;
